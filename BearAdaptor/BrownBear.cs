@@ -10,7 +10,7 @@ namespace BearAdaptor
         private readonly Random _random;
 
 
-        public Bear()
+        public BrownBear()
         {
             _random = new Random();
 
