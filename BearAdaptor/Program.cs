@@ -23,6 +23,8 @@ namespace BearAdapter
             dog2.Fetch("rabbit");
 
             Console.WriteLine();
+
+            IDog fakeDog = new BearAdapter();
         }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BearAdaptor", "BearAdaptor\BearAdaptor.csproj", "{9D2F3F40-9140-4FE6-A406-B96DDD6BAA74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descomprenssor", "Descomprenssor\Descomprenssor.csproj", "{D2FB652F-38A3-4414-886E-4F5A42720578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStreams", "FileStreams\FileStreams.csproj", "{BEDD4D69-D407-4DFE-8260-A076DDBB567D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{9D2F3F40-9140-4FE6-A406-B96DDD6BAA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D2F3F40-9140-4FE6-A406-B96DDD6BAA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D2F3F40-9140-4FE6-A406-B96DDD6BAA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FB652F-38A3-4414-886E-4F5A42720578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FB652F-38A3-4414-886E-4F5A42720578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FB652F-38A3-4414-886E-4F5A42720578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FB652F-38A3-4414-886E-4F5A42720578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDD4D69-D407-4DFE-8260-A076DDBB567D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDD4D69-D407-4DFE-8260-A076DDBB567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDD4D69-D407-4DFE-8260-A076DDBB567D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDD4D69-D407-4DFE-8260-A076DDBB567D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
