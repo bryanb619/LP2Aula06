@@ -66,18 +66,17 @@ namespace FileStreams
         {
             // Código aqui
 
-            FileStream fs = new FileStream(
+            using FileStream fs = new FileStream(
                 filenameText, FileMode.Create, FileAccess.Write);
 
             // StreamWriter sw = new StreamWriter(filenameText);
 
-            StreamWriter sw = new StreamWriter(fs);
+            using StreamWriter sw = new StreamWriter(fs);
 
             sw.WriteLine(dataString);
             sw.WriteLine(dataInt);
             sw.WriteLine(dataFloat);
         
-            sw.Close();
         }
 
         // 2. Lê ficheiro em modo de texto
@@ -86,10 +85,10 @@ namespace FileStreams
             string line;
 
             // Código aqui
-            FileStream fs = new FileStream(
+            using FileStream fs = new FileStream(
                 filenameText,FileMode.Open, FileAccess.Read);
 
-            StreamReader sr = new StreamReader(fs);
+            using StreamReader sr = new StreamReader(fs);
 
             while((line = sr.ReadLine()) != null)
             {
@@ -101,7 +100,6 @@ namespace FileStreams
             //int stuffInt = int.Parse(sr.ReadLine()); 
             //float stuffFloat = float.Parse(sr.ReadLine());  
 
-            sr.Close();
         }
 
         // 3. Escreve ficheiro em modo binário
@@ -109,16 +107,15 @@ namespace FileStreams
         {
             // Código aqui
 
-            FileStream fs = new FileStream(
+            using FileStream fs = new FileStream(
                 filenameBinary, FileMode.Create, FileAccess.Write);
 
-            BinaryWriter bw = new BinaryWriter(fs);
+            using BinaryWriter bw = new BinaryWriter(fs);
 
             bw.Write(dataString);
             bw.Write(dataInt);
             bw.Write(dataFloat);
 
-            bw.Close();
         }
 
         // 4. Lê ficheiro em modo binário
@@ -127,18 +124,16 @@ namespace FileStreams
             // Código aqui
 
 
-            FileStream fs = new FileStream(
+            using FileStream fs = new FileStream(
                 filenameBinary, FileMode.Open, FileAccess.Read);
 
-            BinaryReader br = new BinaryReader(fs);
+            using BinaryReader br = new BinaryReader(fs);
 
 
             Console.WriteLine(br.ReadString());
             Console.WriteLine(br.ReadInt32());
             Console.WriteLine(br.ReadSingle());
         
-
-            br.Close();
         }
     }
 }
